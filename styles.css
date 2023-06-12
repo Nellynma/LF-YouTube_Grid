@@ -1,0 +1,267 @@
+* {
+    padding: 0px;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 10vh 10vh 80vh;
+}
+
+.sidebar {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+}
+
+i {
+    font-size: 23px;
+}
+
+.sidebar .menu {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1/2;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.menu-icon {
+    text-align: center;
+}
+
+.home,
+.shorts,
+.subscription,
+.library,
+.history,
+.videos,
+.watch,
+.liked,
+.sub1,
+.sub2,
+.sub3,
+.sub4 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home:hover,
+.shorts:hover,
+.subscription:hover,
+.library:hover,
+.history:hover,
+.videos:hover,
+.watch:hover,
+.liked:hover,
+.sub1:hover,
+.sub2:hover,
+.sub3:hover,
+.sub4:hover {
+    background-color: rgba(211, 211, 211, 0.795);
+    border-radius: 12px;
+}
+
+.home-icon,
+.shorts-icon,
+.subscription-icon,
+.library-icon,
+.history-icon,
+.videos-icon,
+.watch-icon,
+.liked-icon,
+.sub1-img,
+.sub2-img,
+.sub3-img,
+.sub4-img {
+    text-align: center;
+}
+
+.home-text,
+.shorts-text,
+.subscription-text,
+.library-text,
+.history-text,
+.videos-text,
+.watch-text,
+.liked-text,
+.sub1-text,
+.sub2-text,
+.sub3-text,
+.sub4-text {
+    padding: 0 15px;
+}
+
+.sub-p {
+    padding: 0 25px;
+    font-size: 20px;
+}
+
+.hr {
+    padding: 20px 0;
+}
+
+hr {
+    color: gray;
+    width: 80%;
+    margin: auto;
+}
+
+.sidebar img {
+    border-radius: 50%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-content: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0;
+}
+
+header .search-input {
+    width: 70%;
+    height: 45px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128, 0.712);
+}
+
+header .btn {
+    border: 1px solid black;
+    width: 10%;
+    height: 43px;
+    margin-left: -5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #f7f9fb url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    border: 1px solid rgba(128, 128, 128, 0.712);
+
+}
+
+header input::placeholder {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.mic {
+    padding: 25px;
+    color: black;
+}
+
+.header-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-icons img {
+    border-radius: 50%;
+}
+
+.header-icons a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: rgba(211, 211, 211, 0.411);
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.dark:hover {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.body {
+    grid-column: 2/2;
+    grid-row: 3/4;
+}
+
+.body-cont1 {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1/2;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.fig-3 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    justify-content: space-between;
+    width: 340px;
+
+}
+
+.fig-3 .one {
+    width: 50px;
+}
+
+.one img {
+    border-radius: 50%;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figcaption {
+    padding: 0;
+    margin: 0;
+    line-height: 16px;
+
+}
+
+figure video {
+    border-radius: 25px;
+}
+
+figure h3 {
+    font-size: 15px;
+}
